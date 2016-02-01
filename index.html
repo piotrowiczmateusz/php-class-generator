@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+
+		<!-- Meta-tags -->
+
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+	  <title>PHP Class Generator</title>
+
+	  <!-- Fonts and icons -->
+
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" type="text/css" />
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+ 		<!-- CSS links -->
+
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+ 		<link rel="stylesheet" href="css/prism.css" />
+ 		<link rel="stylesheet" href="css/main.css" />
+
+	</head>
+	<body>
+
+		<div id="header" class="col-md-12"><i class="fa fa-code"></i> PHP Class Generator</div>
+
+		<div class="container">
+			<div class="row">
+			 	<div id="edit-class"class="col-md-6 box">
+				 	<div id="form">
+					 	<form>
+					    	<fieldset>
+
+					      		<label for="class-name">Class name*: </label><br />
+					      		<input type="text" name="class-name" id="class-name" placeholder="Enter class name..." class="form-control"><br />
+
+					      		<label for="super">Superclass: </label><br />
+					      		<input type="text" name="superclass" id="superclass" placeholder="Enter superclass..." class="form-control"><br />
+
+					      		<label for="super">Interface: </label><br />
+					      		<input type="text" name="interface" id="interface" placeholder="Enter interface..." class="form-control"><br />
+
+					      		<label for="abstract">Is abstract: </label>
+					      		<input type="checkbox" name="abstract" id="abstract"><br /><br />
+
+					      		<label for="class-attributes">Class attributes*: </label>
+					      		<textarea id="class-attributes" placeholder="Enter class attribures seperated by comma..." class="form-control" rows="4"></textarea><br />
+
+					      		<input id="submit" type="submit" tabindex="-1" value="Generate code" class=" btn-block">
+
+					    	</fieldset>
+					  	</form>
+				  	</div>
+	  			</div>
+
+				  <div id="source-code" class="col-md-6 box">
+				  	<pre class="language-php"><code>Source code goes here...</code></pre>
+				  </div>
+	  		</div>
+	  	</div>
+
+		<!-- Javascript -->
+
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="js/prism.js"></script>
+	  <script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>
